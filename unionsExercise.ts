@@ -9,7 +9,7 @@ highScore = 1;
 highScore = true;
 
 // Wrong
-highScore = [];
+// highScore = [];
 
 // **********************************************
 // ******************* PART 2 *******************
@@ -24,7 +24,7 @@ stuff = [1, 2, 3];
 stuff = ["one", "two", "three"];
 
 // Wrong
-stuff = [1, "two", 3];
+// stuff = [1, "two", 3];
 
 // **********************************************
 // ******************* PART 3 *******************
@@ -37,7 +37,7 @@ type SkillLevel = "Beginner" | "Intermediate" | "Advanced" | "Expert";
 let level1: SkillLevel = "Beginner";
 
 // Wrong
-let level2: SkillLevel = "Insane";
+// let level2: SkillLevel = "Insane";
 
 // **********************************************
 // ******************* PART 4 *******************
@@ -53,6 +53,22 @@ type SkiSchoolStudent = {
   sport: "ski" | "snowboard";
   level: SkillLevel;
 };
+
+// Right
+let john: SkiSchoolStudent = {
+  name: "John",
+  age: 32,
+  sport: "ski",
+  level: "Beginner",
+};
+
+// Wrong
+// let peter: SkiSchoolStudent = {
+//   name: "Peter",
+//   age: 45,
+//   sport: "wakeboard",
+//   level: "Insane",
+// };
 
 // **********************************************
 // ******************* PART 5 *******************
@@ -94,3 +110,6 @@ let greet = (name: string | string[]): void => {
     }
   }
 };
+
+console.log(greet("Jane"));
+console.log(greet(["Jolie", "John", "Jenny"]));
